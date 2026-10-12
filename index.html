@@ -156,7 +156,7 @@
   <section class="right-panel">
   <div class="content-area" id="content-area">
    <div class="content-list">
-
+        
   
 
 </div>
@@ -748,7 +748,7 @@ Gamewave is a clean, ad-free game distribution platform built to let users brows
         <span class="views">2024</span>
       </div>
       <h3 class="content-title">Arduino Course</h3>
-      <p class="content-desc">Completed professional training in modern web development technologies.</p>
+      <p class="content-desc">Completed Arduino Advanced Course.</p>
       <div class="cv-actions">
         <a href="arduino.jpeg" target="_blank" class="btn-view">View Online</a>
         <a href="arduino.jpeg" download class="btn-download">Download PDF</a>
@@ -870,6 +870,10 @@ function setupReadMore(container) {
   });
 }
 
+   // ========== Show the About section on load (desktop only) ==========
+  if (!mobileQuery.matches) {
+    document.getElementById('content-area').innerHTML = folderContent.web;
+  }
   // ========== Click handler ==========
   document.querySelectorAll('.folder-card').forEach(card => {
     card.addEventListener('click', () => {
