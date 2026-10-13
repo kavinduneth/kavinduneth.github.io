@@ -218,6 +218,7 @@ body {
   cursor: pointer;
 }
 
+
 .skill-icon img {
   width: 100%;
   height: 100%;
@@ -1500,4 +1501,56 @@ body.modal-open {
 /* About text: keep it readable directly on the background */
 .about-text {
   color: #1e293b;
+}
+/* ===== Contact icons ===== */
+.contact-sector {
+  margin-top: 0.4rem;
+}
+
+.contact-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+.contact-icon {
+  width: 34px;
+  height: 34px;
+  background: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.2s ease;
+}
+
+.contact-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.contact-icon:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  transform: translateY(-2px);
+}
+
+/* Slightly bigger on mobile, to match the skill icons */
+@media (max-width: 768px) {
+  .contact-row {
+    max-width: 320px;
+    gap: 0.55rem;
+  }
+
+  .contact-icon {
+    width: 38px;
+    height: 38px;
+  }
 }
